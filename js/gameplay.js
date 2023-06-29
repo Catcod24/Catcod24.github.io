@@ -10,6 +10,8 @@ playdiv.id = 'divplay';
 document.body.appendChild(playdiv);
 var playbtn = document.createElement('button');
 playbtn.id = 'btnplay';
+playbtn.style.borderRadius = "25px";
+playbtn.style.fontSize = "15px";
 playbtn.innerHTML = 'play';
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
