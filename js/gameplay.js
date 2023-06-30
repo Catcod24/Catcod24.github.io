@@ -9,7 +9,6 @@ var playdiv = document.createElement('div');
 playdiv.id = 'divplay';
 playdiv.style.width = "100%";
 playdiv.style.textAlign = "center";
-playdiv.top = "46%";
 document.body.appendChild(playdiv);
 var playbtn = document.createElement('button');
 playbtn.id = 'btnplay';
@@ -18,6 +17,7 @@ playbtn.style.fontSize = "20px";
 playbtn.style.fontFamily = "New Times Roman";
 playbtn.style.background = "yellow";
 playbtn.innerHTML = 'play';
+playbtn.top = "46%";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
 function play(){
