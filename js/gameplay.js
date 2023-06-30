@@ -1,10 +1,8 @@
 document.body.style.backgroundImage = "url('img/bg/spatiu.jpg')";
-/*const para = document.createElement("p");
-para.innerText = "This is a paragraph";
-document.body.appendChild(para);
-
-Try it Yourself »
-*/
+var load_s = document.createElement("script");
+load_s.src = "js/load.js";
+document.body.appendChild(load_s);
+g_load(1);
 var playdiv = document.createElement('div');
 playdiv.id = 'divplay';
 playdiv.style.width = "100%";
@@ -22,9 +20,13 @@ playbtn.style.position = "relative";
 playbtn.style.top = "45%";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
+g_load(0);
 function play(){
   playbtn.remove();
   playdiv.remove();
+  playbtn = 0;
+  playdiv = 0;
+  g_load(1);
 }
 
 
