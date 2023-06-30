@@ -18,6 +18,7 @@ playbtn.style.fontSize = "20px";
 playbtn.style.fontFamily = "New Times Roman";
 playbtn.style.background = "yellow";
 playbtn.innerHTML = 'play';
+playbtn.style.position = "relative";
 playbtn.top = "46%";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
