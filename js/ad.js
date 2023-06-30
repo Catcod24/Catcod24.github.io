@@ -1,3 +1,4 @@
+console.log('ad.js imported');
 const ad_n = { 
   adFinished: () => console.log("End midgame ad (callback)"), 
   adError: (error) => console.log("Error midgame ad (callback)", error), 
