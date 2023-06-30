@@ -1,3 +1,4 @@
+console.log('gameplay.js imported');
 document.body.style.backgroundImage = "url('img/bg/spatiu.jpg')";
 var load_s = document.createElement("script");
 load_s.src = "js/load.js";
