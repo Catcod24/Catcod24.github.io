@@ -9,6 +9,7 @@ var playdiv = document.createElement('div');
 playdiv.id = 'divplay';
 playdiv.style.width = "100%";
 playdiv.style.textAlign = "center";
+playdiv.style.height = "100%";
 document.body.appendChild(playdiv);
 var playbtn = document.createElement('button');
 playbtn.id = 'btnplay';
