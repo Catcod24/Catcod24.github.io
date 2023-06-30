@@ -19,7 +19,7 @@ playbtn.style.fontFamily = "New Times Roman";
 playbtn.style.background = "yellow";
 playbtn.innerHTML = 'Play';
 playbtn.style.position = "relative";
-playbtn.style.top = "700px";
+playbtn.style.top = "200px";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
 function play(){
