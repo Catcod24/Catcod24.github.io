@@ -27,6 +27,20 @@ function play(){
   playbtn = 0;
   playdiv = 0;
   g_load(1);
+  playdiv = document.createElement('div');
+  playdiv.id = 'divplay';
+  playdiv.style.width = "100%";
+  playdiv.style.textAlign = "center";
+  playdiv.style.height = "100%";
+  document.body.appendChild(playdiv);
+  playbtn = document.createElement('p');
+  playbtn.innerHTML = "Loading...";
+  playbtn.style.fontSize = '30px';
+  playbtn.style.color = 'yellow';
+  playdiv.appendChild(playbtn);
+  var g_script = document.createElement('script');
+  g_script.src = 'js/game.js';
+  document.body.appendChild(g_script);
 }
 
 
