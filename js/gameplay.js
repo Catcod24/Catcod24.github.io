@@ -7,11 +7,15 @@ Try it Yourself »
 */
 var playdiv = document.createElement('div');
 playdiv.id = 'divplay';
+playdiv.style.width = "100%";
+playdiv.style.textAlign = "center";
 document.body.appendChild(playdiv);
 var playbtn = document.createElement('button');
 playbtn.id = 'btnplay';
 playbtn.style.borderRadius = "25px";
-playbtn.style.fontSize = "15px";
+playbtn.style.fontSize = "20px";
+playbtn.style.fontFamily = "New Times Roman";
+playbtn.style.background = "yellow";
 playbtn.innerHTML = 'play';
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
