@@ -1,3 +1,4 @@
+console.log('load.js imported');
 var l_status = 0;
 function g_load(type){
   if(type == 1){
