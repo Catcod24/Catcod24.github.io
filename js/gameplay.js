@@ -14,12 +14,12 @@ document.body.appendChild(playdiv);
 var playbtn = document.createElement('button');
 playbtn.id = 'btnplay';
 playbtn.style.borderRadius = "25px";
-playbtn.style.fontSize = "25px";
+playbtn.style.fontSize = "45px";
 playbtn.style.fontFamily = "New Times Roman";
 playbtn.style.background = "yellow";
 playbtn.innerHTML = 'Play';
 playbtn.style.position = "relative";
-playbtn.style.top = "200px";
+playbtn.style.top = "45%";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
 function play(){
