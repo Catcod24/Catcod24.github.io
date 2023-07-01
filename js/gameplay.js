@@ -19,7 +19,7 @@ playbtn.style.fontFamily = "New Times Roman";
 playbtn.style.background = "yellow";
 playbtn.innerHTML = 'Play';
 playbtn.style.position = "relative";
-playbtn.style.top = "45%";
+playbtn.style.top = "1px";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
 alert("ttulvai");
