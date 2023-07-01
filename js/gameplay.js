@@ -1,8 +1,5 @@
+g_load(1);//porneste statusu de loading
 document.body.style.backgroundImage = "url('img/bg/spatiu.jpg')";
-/*var load_s = document.createElement("script");
-load_s.src = "js/load.js";
-document.body.appendChild(load_s);
-g_load(1);*/
 var playdiv = document.createElement('div');
 playdiv.id = 'divplay';
 playdiv.style.width = "100%";
@@ -17,16 +14,16 @@ playbtn.style.fontFamily = "New Times Roman";
 playbtn.style.background = "yellow";
 playbtn.innerHTML = 'Play';
 playbtn.style.position = "relative";
-playbtn.addEventListener("click", play);
+playbtn.addEventListener("click", play);//pune eventul
 playdiv.appendChild(playbtn);
-//g_load(0);
-alert("umm");
+g_load(0);//opreste statusu de loading
+//get primesti statusu de loading
 function play(){
-  playbtn.remove();
+  playbtn.remove();//sterge elementele
   playdiv.remove();
   playbtn = 0;
   playdiv = 0;
-  //g_load(1);
+  g_load(1);//start statusu din nou
   playdiv = document.createElement('div');
   playdiv.id = 'divplay';
   playdiv.style.width = "100%";
@@ -38,7 +35,7 @@ function play(){
   playbtn.style.fontSize = '30px';
   playbtn.style.color = 'yellow';
   playdiv.appendChild(playbtn);
-  var g_script = document.createElement('script');
+  var g_script = document.createElement('script');//importam game.js
   g_script.src = 'js/game.js';
   document.body.appendChild(g_script);
 }
