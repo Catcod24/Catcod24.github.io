@@ -1,4 +1,4 @@
-alert("merge");
+import {g_load, l_status} from "./load.js";
 document.body.style.backgroundImage = "url('img/bg/spatiu.jpg')";
 /*var load_s = document.createElement("script");
 load_s.src = "js/load.js";
@@ -20,7 +20,6 @@ playbtn.innerHTML = 'Play';
 playbtn.style.position = "relative";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
-alert("ttulvai");
 //g_load(0);
 alert("umm");
 function play(){
