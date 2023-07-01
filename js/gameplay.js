@@ -22,7 +22,9 @@ playbtn.style.position = "relative";
 playbtn.style.top = "45%";
 playbtn.addEventListener("click", play);
 playdiv.appendChild(playbtn);
+alert("ttulvai");
 g_load(0);
+alert("umm");
 function play(){
   playbtn.remove();
   playdiv.remove();
