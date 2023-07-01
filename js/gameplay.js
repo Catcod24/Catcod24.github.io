@@ -1,4 +1,4 @@
-import {g_load, l_status} from "./load.js";
+import {g_load, l_status} from "./js/load.js";
 document.body.style.backgroundImage = "url('img/bg/spatiu.jpg')";
 /*var load_s = document.createElement("script");
 load_s.src = "js/load.js";
