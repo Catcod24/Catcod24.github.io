@@ -1,4 +1,5 @@
 g_load(1);//porneste statusu de loading
+game_play(0);
 document.body.style.backgroundImage = "url('img/bg/spatiu.jpg')";
 var playdiv = document.createElement('div');
 playdiv.id = 'divplay';
