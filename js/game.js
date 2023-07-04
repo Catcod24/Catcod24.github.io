@@ -18,8 +18,9 @@ if (typeof(Storage) !== "undefined") {
   if(localStorage.getItem('version_r') !== null){
     var i = 0;
     while(i < gamek.lenght || i == gamek.lenght){
-      if(gamek[i] !== 'ls' || gamek[i] !== version_r){
+      if(gamek[i] !== 'ls' || gamek[i] !== 'version_r'){
         i = i + 1;
+        game[gamek[i]] = localStorage.getItem(gamek[i]);
       } else {
         i = i + 1;
       }
