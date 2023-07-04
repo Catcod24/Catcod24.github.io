@@ -4,7 +4,8 @@ var game = {
   version_r: 0.1,
   level: 0,
   l_stage: 0,
-  l_total_stage: 0
+  l_total_stage: 0,
+  ls: 9
 }
 var items = {
   money: 0,
