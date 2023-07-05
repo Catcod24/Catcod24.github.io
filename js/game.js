@@ -4,7 +4,7 @@ var game = {
   version_r: 0.1,
   level: 0,
   l_stage: 0,
-  l_total_stage 0,
+  l_total_stage: 0,
   ls: 9
 }
 var items = {
@@ -38,7 +38,7 @@ if (typeof(Storage) !== "undefined") {
     while(i < gamek.lenght || i == gamek.lenght){
       if(gamek[i] !== 'ls' || gamek[i] !== 'version_c'){
         i = i + 1;
-        game[gamek[i]] = localStorage.getItem(gamek[i]);
+        localStorage.setItem(gamek[i], game[gamek[i]]);
       } else {
         i = i + 1;
       }
@@ -46,7 +46,7 @@ if (typeof(Storage) !== "undefined") {
     i = 0;
     while(i < itemsk.lenght || i == itemsk.lenght){
       i = i + 1;
-      items[itemsk[i]] = localStorage.getItem(itemsk[i]);
+      localStorage.setItem(itemsk[i], items[itemsk[i]]);
     }
   }
 } else {
