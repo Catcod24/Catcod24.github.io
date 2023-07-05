@@ -1,4 +1,7 @@
 alert('x');
+var levload = document.createElement('script');
+levload.type = 'application/json';
+var slev = 'levels/level';
 var game = {
   version_c: 0.1,
   version_r: 0.1,
