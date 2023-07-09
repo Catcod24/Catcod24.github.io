@@ -8,11 +8,15 @@ var game = {
   level: 0,
   l_stage: 0,
   l_total_stage: 0,
-  ls: 9
+  ls: 9,
+  gm_sav: 0
 }
 var items = {
   money: 0,
   apple: 0
+}
+var gms = {
+  games: 0
 }
 var gamek = Object.keys(game);
 var itemsk = Object.keys(items);
