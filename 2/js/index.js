@@ -52,15 +52,9 @@ btnp.addEventListener('click', function () {
   db.remove();
   div.remove();
   //wri = wrl = dvs = btnp = des = ddes = db = div = 0;
-  if(select == 'i'){
-    select = 'js/i.js';
-  }
-  if(select == 'l'){
-    select = 'js/l.js';
-  }
   alert(select);
   var script = document.createElement('script');
-  script.src = select;
+  script.src = 'js/i.js';
   document.body.appendChild(script);
 })
 
