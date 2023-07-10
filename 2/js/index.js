@@ -1,9 +1,11 @@
 var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
+wri.innerHTML = "infinite ∞";
 var wrl = document.createElement('button');
 wrl.style.border = "0px";
 wrl.style.backgroundColor = "Chartreuse";
+wrl.innerHTML = "levels";
 var select = "l";
 var dv = document.createElement('div');
 dv.style.textAlign = "center";
