@@ -15,7 +15,7 @@ var btnp = document.createElement('button');
 btnp.style.backgroundColor = "Chartreuse";
 btnp.style.fontSize = "22px";
 btnp.style.fontFamily = "Times New Roman";
-btnp.innerHTML = "Play/n\n";
+btnp.innerHTML = "Play";
 document.body.appendChild(dv);
 dv.appendChild(btnp);
 dv.appendChild(dvs);
