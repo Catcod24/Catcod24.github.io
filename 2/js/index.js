@@ -18,7 +18,7 @@ btnp.style.fontFamily = "Times New Roman";
 btnp.innerHTML = "Play/n\n";
 document.body.appendChild(dv);
 dv.appendChild(btnp);
-document.body.appendChild(dvs);
+dv.appendChild(dvs);
 dvs.appendChild(wri);
 dvs.appendChild(wrl);
 wri.addEventListener("click", function () {
