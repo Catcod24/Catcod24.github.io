@@ -18,16 +18,14 @@ document.body.appendChild(dv);
 dv.appendChild(btnp);
 dv.appendChild(wri);
 dv.appendChild(wrl);
-wri.addEventListener("click", sel("i"));
-wrl.addEventListener("click", sel("l"));
-function sel(w){
-  if(w == "i"){
-    select = "i";
-    wri.style.backgroundColor = "Chartreuse";
-    wrl.style.backgroundColor = "white";
-  } else {
-    select = "l";
-    wrl.style.backgroundColor = "Chartreuse";
-    wri.style.backgroundColor = "white";
-  }
-}
+wri.addEventListener("click", function () {
+  select = "i";
+  wri.style.backgroundColor = "Chartreuse";
+  wrl.style.backgroundColor = "white";
+});
+wrl.addEventListener("click", function () {
+  select = "l";
+  wrl.style.backgroundColor = "Chartreuse";
+  wri.style.backgroundColor = "white";
+});
+
