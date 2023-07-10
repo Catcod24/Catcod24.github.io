@@ -1,4 +1,4 @@
-alert('version 1.4');
+alert('version 1.5');
 var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
@@ -51,7 +51,7 @@ btnp.addEventListener('click', function () {
   ddes.remove();
   db.remove();
   div.remove();
-  wri = wrl = dvs = btnp = des = ddes = db = div = 0;
+  //wri = wrl = dvs = btnp = des = ddes = db = div = 0;
   if(select == 'i'){
     select = 'js/i.js';
   }
