@@ -1,4 +1,4 @@
-alert('version 1.6');
+alert('version 1.7');
 var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
@@ -52,9 +52,9 @@ btnp.addEventListener('click', function () {
   db.remove();
   div.remove();
   //wri = wrl = dvs = btnp = des = ddes = db = div = 0;
-  alert(select);
-  var script = document.createElement('script');
-  script.src = 'js/i.js';
-  document.body.appendChild(script);
+  alert('select');
+  var g_script = document.createElement('script');//importam game.js
+  g_script.src = 'js/i.js';
+  document.body.appendChild(g_script);
 })
 
