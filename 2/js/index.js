@@ -1,4 +1,4 @@
-alert('version 1');
+alert('version 1.1');
 var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
@@ -51,19 +51,15 @@ btnp.addEventListener('click', function () {
   ddes.remove();
   db.remove();
   div.remove();
-  alert('ok');
   wri = wrl = dvs = btnp = des = ddes = db = div = 0;
-  alert('mmerge ona');
-  var script;
   if(select == 'i'){
-    script = document.createElement('script');
-    script.src = 'js/level.js';
-    document.body.appendChild(script);
-  } else {
-    script = document.createElement('script');
-    script.src = 'js/infinite.js';
-    document.body.appendChild(script);
+    select = 'js/infinite.js';
   }
+  if(select == 'l'){
+    select = 'js/level.js';
+  }
+  var script = document.createElement('script');
+  script.src = select;
+  document.body.appendChild(script);
 })
-alert('ina tttulvai');
 
