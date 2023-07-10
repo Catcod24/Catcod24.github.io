@@ -41,4 +41,22 @@ wrl.addEventListener("click", function () {
   wrl.style.backgroundColor = "Chartreuse";
   wri.style.backgroundColor = "white";
 });
-
+btnp.addEventListener('click', function () {
+  wri.remove();
+  wrl.remove();
+  dvs.remove();
+  btnp.remove();
+  des.remove();
+  ddes.remove();
+  db.remove();
+  div.remove();
+  wri = wrl = dvs = btnp = des = ddes = db = div = 0;
+  var script = document.createElement('script');
+  if(select == 'i'){
+    script.src = 'js/level.js';
+    document.body.appendChild(script);
+  } else {
+    script.src = 'js/infinite.js';
+    document.body.appendChild(script);
+  }
+})
