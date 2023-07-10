@@ -1,4 +1,4 @@
-alert('version 1.3');
+alert('version 1.4');
 var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
@@ -58,6 +58,7 @@ btnp.addEventListener('click', function () {
   if(select == 'l'){
     select = 'js/l.js';
   }
+  alert(select);
   var script = document.createElement('script');
   script.src = select;
   document.body.appendChild(script);
