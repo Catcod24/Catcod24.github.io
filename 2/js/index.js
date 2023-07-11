@@ -1,4 +1,4 @@
-alert('version 1.9');
+alert('version 2.0');
 var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
@@ -43,14 +43,14 @@ wrl.addEventListener("click", function () {
   wri.style.backgroundColor = "white";
 });
 btnp.addEventListener('click', function () {
-  /*wri.remove();
+  wri.remove();
   wrl.remove();
   dvs.remove();
   btnp.remove();
   des.remove();
   ddes.remove();
   db.remove();
-  div.remove();*/
+  div.remove();
   alert('ofc');
 })
 
