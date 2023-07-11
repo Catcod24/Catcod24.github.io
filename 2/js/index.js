@@ -1,29 +1,29 @@
-alert('version 2.1');
-const wri = document.createElement('button');
+alert('version 2.2');
+var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
 wri.innerHTML = "infinite ∞";
 wri.style.fontSize = "15px";
-const wrl = document.createElement('button');
+var wrl = document.createElement('button');
 wrl.style.border = "0px";
 wrl.style.backgroundColor = "Chartreuse";
 wrl.innerHTML = "levels";
 wrl.style.fontSize = "15px";
-let select = "l";
-const dv = document.createElement('div');
+var select = "l";
+var dv = document.createElement('div');
 dv.style.textAlign = "center";
-const dvs = document.createElement('div');
+var dvs = document.createElement('div');
 dvs.style.textAlign = "center";
-const btnp = document.createElement('button');
+var btnp = document.createElement('button');
 btnp.style.backgroundColor = "Chartreuse";
 btnp.style.fontSize = "22px";
 btnp.style.fontFamily = "Times New Roman";
 btnp.innerHTML = "Play";
-const des = document.createElement('p');
-const db = document.createElement('br');
+var des = document.createElement('p');
+var db = document.createElement('br');
 des.appendChild(db);
 des.appendChild(db);
-const ddes = document.createElement('p');
+var ddes = document.createElement('p');
 //ddes.appendChild(db);
 document.body.appendChild(dv);
 dv.appendChild(btnp);
@@ -50,7 +50,7 @@ btnp.addEventListener('click', function () {
   des.remove();
   ddes.remove();
   db.remove();
-  div.remove();
+  dv.remove();
   alert('ofc');
 })
 
