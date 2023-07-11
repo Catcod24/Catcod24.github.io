@@ -1,4 +1,4 @@
-alert('version 1.8');
+alert('version 1.9');
 var wri = document.createElement('button');
 wri.style.border = "0px";
 wri.style.backgroundColor = "white";
