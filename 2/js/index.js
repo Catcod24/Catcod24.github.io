@@ -43,14 +43,14 @@ wrl.addEventListener("click", function () {
   wri.style.backgroundColor = "white";
 });
 btnp.addEventListener('click', function () {
-  wri.remove();
+  /*wri.remove();
   wrl.remove();
   dvs.remove();
   btnp.remove();
   des.remove();
   ddes.remove();
   db.remove();
-  div.remove();
-  document.write('ssss');
+  div.remove();*/
+  alert('ofc');
 })
 
