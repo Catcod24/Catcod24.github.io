@@ -1,14 +1,14 @@
 var bup = document.createElement('button');
 bup.style.position = 'absolute';
-bup.style.left = '12%';
+bup.style.left = '14%';
 bup.style.bottom = '25%';
 bup.style.width = '10%';
 bup.style.height = '8%';
 bup.style.opacity = '0.5';
 var bod = document.createElement('button');
 bod.style.position = 'absolute';
-bod.style.left = '12%';
-bod.style.bottom = '10%';
+bod.style.left = '14%';
+bod.style.bottom = '8%';
 bod.style.width = '10%';
 bod.style.height = '8%';
 bod.style.opacity = '0.5';
