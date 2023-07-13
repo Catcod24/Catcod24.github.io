@@ -27,6 +27,7 @@ bri.style.width = '15%';
 bri.style.height = '13%';
 bri.style.opacity = '0.5';
 var rplay = document.createElement('button');
+rplay.style.position = 'relative';
 rplay.style.border = '0px';
 rplay.style.background = 'yellow';
 rplay.style.left = '1%';
