@@ -27,15 +27,15 @@ bri.style.width = '15%';
 bri.style.height = '13%';
 bri.style.opacity = '0.5';
 var rplay = document.createElement('button');
-rplay.style.position = 'relative';
+/*rplay.style.position = 'relative';
 rplay.style.border = '0px';
 rplay.style.background = 'yellow';
 rplay.style.left = '1%';
-//rplay.style.top = '1%';
+//rplay.style.top = '1%';*/
 rplay.style.width = '10%';
 rplay.style.height = '10%';
 //rplay.zIndex = '-1';
-alert('ã');
+alert('ãb');
 document.body.appendChild(rplay);
 document.body.appendChild(bri);
 document.body.appendChild(ble);
