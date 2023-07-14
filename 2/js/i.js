@@ -39,3 +39,25 @@ document.body.appendChild(bri);
 document.body.appendChild(ble);
 document.body.appendChild(bod);
 document.body.appendChild(bup);
+bup.addEventListener("click", function () {
+  let or = rp.style.bottom;
+  or.replace('%', '');
+  let ori = parseInt(or);
+  if(ori < 90){
+    ori = ori + 10;
+  }
+  ori = ori.toString();
+  ori = ori + '%';
+  rp.style.bottom = ori;
+});
+bod.addEventListener("click", function () {
+  let or = rp.style.bottom;
+  or.replace('%', '');
+  let ori = parseInt(or);
+  if(ori > 0){
+    ori = ori - 10;
+  }
+  ori = ori.toString();
+  ori = ori + '%';
+  rp.style.bottom = ori;
+});
