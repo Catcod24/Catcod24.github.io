@@ -61,3 +61,25 @@ bod.addEventListener("click", function () {
   ori = ori + '%';
   rp.style.bottom = ori;
 });
+ble.addEventListener("click", function () {
+  let or = rp.style.left;
+  or.replace('%', '');
+  let ori = parseInt(or);
+  if(ori > 0){
+    ori = ori - 10;
+  }
+  ori = ori.toString();
+  ori = ori + '%';
+  rp.style.bottom = ori;
+});
+bri.addEventListener("click", function () {
+  let or = rp.style.bottom;
+  or.replace('%', '');
+  let ori = parseInt(or);
+  if(ori < 90){
+    ori = ori + 10;
+  }
+  ori = ori.toString();
+  ori = ori + '%';
+  rp.style.bottom = ori;
+});
