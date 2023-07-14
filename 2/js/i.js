@@ -70,10 +70,10 @@ ble.addEventListener("click", function () {
   }
   ori = ori.toString();
   ori = ori + '%';
-  rp.style.bottom = ori;
+  rp.style.left = ori;
 });
 bri.addEventListener("click", function () {
-  let or = rp.style.bottom;
+  let or = rp.style.left;
   or.replace('%', '');
   let ori = parseInt(or);
   if(ori < 90){
@@ -81,5 +81,5 @@ bri.addEventListener("click", function () {
   }
   ori = ori.toString();
   ori = ori + '%';
-  rp.style.bottom = ori;
+  rp.style.left = ori;
 });
