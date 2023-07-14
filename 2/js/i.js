@@ -33,7 +33,7 @@ rp.style.bottom = '90%';
 rp.style.width = '10%';
 rp.style.height = '10%';
 rp.style.border = '0px';
-//rplay.zIndex = '-1';
+rp.zIndex = '-1';
 document.body.appendChild(rp);
 document.body.appendChild(bri);
 document.body.appendChild(ble);
