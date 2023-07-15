@@ -112,6 +112,9 @@ var en3 = document.createElement('button');
 en1.style.border = '0px';
 en2.style.border = '0px';
 en3.style.border = '0px';
+en1.zIndex = '-1';
+en2.zIndex = '-1';
+en3.zIndex = '-1';
 en1.style.left = a = random(20, 60).toString() + '%';
 en1.style.width = random(20, 100 - getinit(a)).toString() + '%';
 en1.style.height = a = random(10, 50).toString() + '%';
@@ -124,4 +127,7 @@ en3.style.bottom = a = randomor(0, 10).toString() + '%';
 en3.style.height = numstr(50 - getinit(a)) + '%';
 en3.style.width = a = random(10, 40).toString + '%';
 en3.style.left = '60%';
+document.body.appendChild(en1);
+document.body.appendChild(en2);
+document.body.appendChild(en3);
 
