@@ -86,17 +86,42 @@ bri.addEventListener("click", function () {
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
-var r = 0;
-var a = 0;
-r = random(1, 2);
-var en1 = document.createElement('button');
-var en2 = document.createElement('button');
-en1.style.border = '0px';
-en2.style.border = '0px';
-if(r == 1){
-  if(random(1, 2) == 1){
-    en1.style.left = random(20, 60).toString() + '%';
-    en1.style.width = random(1, 2);
+function randomn(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+function getinit(str){
+  let n = str.replace('%', '');
+  return parseInt(n);
+}
+function randomor(f, t){
+  if(randomn(1, 2) == 1){
+    return f
+  } else {
+    return t
   }
 }
+function numstr(ab){
+  return ab.toString();
+}
+var r = 0;
+var a = 0;
+r = randomn(1, 2);
+var en1 = document.createElement('button');
+var en2 = document.createElement('button');
+var en3 = document.createElement('button');
+en1.style.border = '0px';
+en2.style.border = '0px';
+en3.style.border = '0px';
+en1.style.left = a = random(20, 60).toString() + '%';
+en1.style.width = random(20, 100 - getinit(a)).toString() + '%';
+en1.style.height = a = random(10, 50).toString() + '%';
+en1.style.bottom = numstr(getinit(a) + 80 - getinit(a)) + '%';
+en2.style.left = randomor(0, 10).toString() + '%';
+en2.style.bottom = randomor(0, 10).toString() + '%';
+en2.style.height = random(10, 30).toString() + '%';
+en2.style.width = random(10, 40).toString() + '%';
+en3.style.bottom = a = randomor(0, 10).toString() + '%';
+en3.style.height = numstr(50 - getinit(a)) + '%';
+en3.style.width = a = random(10, 40).toString + '%';
+en3.style.left = '60%';
 
