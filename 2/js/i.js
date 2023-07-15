@@ -83,3 +83,6 @@ bri.addEventListener("click", function () {
   ori = ori + '%';
   rp.style.left = ori;
 });
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
