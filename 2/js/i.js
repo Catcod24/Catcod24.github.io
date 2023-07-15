@@ -86,3 +86,17 @@ bri.addEventListener("click", function () {
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+var r = 0;
+var a = 0;
+r = random(1, 2);
+var en1 = document.createElement('button');
+var en2 = document.createElement('button');
+en1.style.border = '0px';
+en2.style.border = '0px';
+if(r == 1){
+  if(random(1, 2) == 1){
+    en1.style.left = random(20, 60).toString() + '%';
+    en1.style.width = random(1, 2);
+  }
+}
+
