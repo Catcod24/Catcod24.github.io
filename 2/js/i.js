@@ -105,6 +105,7 @@ function numstr(ab){
 }
 var r = 0;
 var a = 0;
+alert(random(1, 2));
 r = randomn(1, 2);
 var en1 = document.createElement('button');
 var en2 = document.createElement('button');
