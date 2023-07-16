@@ -2,6 +2,7 @@
 <html lang="ro">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1, height = device-height" />
+    <meta charset="UTF-8">
   </head>
   <body>
     <style>
@@ -22,6 +23,15 @@
         left: 38%;
         text-align: center;
       }
+      .c{
+        text-align: center;
+      }
+      .fs{
+        font-size: 27px;
+      }
+      .ed{
+        border: 3px solid black;
+      }
     </style>
     <script>
       var dv = document.createElement('div');
@@ -35,10 +45,37 @@
       dv.appendChild(btn);
       dv.appendChild(pd);
       pd.appendChild(b);
+      var minus = document.createElement('p');
+      var plus = document.createElement('p');
+      var inc = dpcument.createElement('p');
+      minus.innerHTML = '&#10134';
+      minus.class = 'fs';
+      plus.innerHTML = '&#10133';
+      plus.class = 'fs';
+      inc.contentEditable = 'true';
+      inc.class = 'ed';
+      inc.innerHTML = '2';
+      var dvs = document.createElement('div');
+      dvs.class = 'c';
+      var dl = document.createElement('p');
+      dl.innerHTML = 'De la   ';
+      var pl = document.createElement('p');
+      pl.innerHTML = '   pana la   ';
+      var dli = document.createElement('p');
+      dli.contentEditable = 'true';
+      dli.class = 'ed';
+      dli.innerHTML = '1';
+      var pli = document.createElement('button');
+      pli.contentEditable = 'true';
+      pli.class = 'ed';
+      pli.innerHTML = '10';
       btn.addEventListener("click", function () {
         btn.style.display = 'none';
         dv.style.display = 'none';
       });
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+      }
     </script>
   </body>
 </html>
