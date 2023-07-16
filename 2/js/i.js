@@ -84,7 +84,15 @@ bri.addEventListener("click", function () {
   rp.style.left = ori;
 });
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  let a = Math.floor(Math.random() * (max - min + 1) + min);
+  let b = a.toString();
+  if(b.includes('0') == true){
+    return a
+  } else {
+    let c = b.split('');
+    let d = c[0] + '0';
+    return parseInt(d)
+  }
 }
 function randomn(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
