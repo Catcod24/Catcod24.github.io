@@ -35,6 +35,10 @@
       dv.appendChild(btn);
       dv.appendChild(pd);
       pd.appendChild(b);
+      btn.addEventListener("click", function () {
+        btn.style.display = 'none';
+        dv.style.display = 'none';
+      });
     </script>
   </body>
 </html>
