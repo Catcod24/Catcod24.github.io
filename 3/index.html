@@ -49,28 +49,17 @@
       btn.addEventListener("click", function () {
         //btn.style.display = 'none';
         //dv.style.display = 'none';
+        alert(nl.innerHTML);
       });
       function random(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
       }
       var loop = setInterval(function () {
-        let t = nl.innerHTML;
-        if(t.includes('<br>') == true){
-          t = t.replace('<br>, '');
-          nl.innerHTML = t;
-        }
-        let ts = t.split('');
-        let tl = ts.lenght;
-        let i = 0;
-        let nb = '1234567890';
-        let newl = '';
-        while(i < tl || i == tl){
-          if(nb.includes(ts[i]) == true){
-            newl = newl + ts[i];
-            i = i + 1;
-          }
-        }
-        nl.innerHTML = newl;
+        let s = nl.innerHTML;
+        s = s.replace('.', '');
+        s = s.replace('-', '');
+        s = s.replace(' ', '');
+        nl.innerHTML = s;
       }, 500);
     </script>
   </body>
