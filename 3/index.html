@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html lang="ro">
   <head>
+    <tittle>Ghiceste numarul</tittle>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1, height = device-height" />
   </head>
   <body>
+    <div class="c">
+      <button id="nw">Joc Nou</button>
+      <p><br></p>
+    </div>
+    <div class="c">
+      <p>De la </p>
+      <p id="dli">1</p>
+      <p> pana la </p>
+      <p id="pli">10</p>
+      <p><br></p>
+      <p>Incrercari: </p>
+      <p class="ed" id="inc">5</p>
+      <p>&#10134</p>
+      <p>&#10133</p>
+    </div>
     <style>
       #nw{
         border-radius: 25px;
@@ -16,12 +32,6 @@
         font-family: cursive;
         font-size: 25px;
       }
-      #md{
-        position: absolute;
-        bottom: 65%;
-        left: 38%;
-        text-align: center;
-      }
       .c{
         text-align: center;
       }
@@ -33,50 +43,7 @@
       }
     </style>
     <script>
-      var dv = document.createElement('div');
-      dv.id = 'md';
-      var btn = document.createElement('button');
-      btn.id = 'nw';
-      btn.innerHTML = 'Joc Nou';
-      var b = document.createElement('br');
-      var pd = document.createElement('p');
-      document.body.appendChild(dv);
-      dv.appendChild(btn);
-      dv.appendChild(pd);
-      pd.appendChild(b);
-      var minus = document.createElement('p');
-      var plus = document.createElement('p');
-      var inc = dpcument.createElement('p');
-      minus.innerHTML = '&#10134';
-      minus.class = 'fs';
-      plus.innerHTML = '&#10133';
-      plus.class = 'fs';
-      inc.contentEditable = 'true';
-      inc.class = 'ed';
-      inc.innerHTML = '2';
-      var dvs = document.createElement('div');
-      dvs.class = 'c';
-      var dl = document.createElement('p');
-      dl.innerHTML = 'De la   ';
-      var pl = document.createElement('p');
-      pl.innerHTML = '   pana la   ';
-      var dli = document.createElement('p');
-      dli.contentEditable = 'true';
-      dli.class = 'ed';
-      dli.innerHTML = '1';
-      var pli = document.createElement('button');
-      pli.contentEditable = 'true';
-      pli.class = 'ed';
-      pli.innerHTML = '10';
-      document.body.appendChild(dvs);
-      dvs.appendChild(dl);
-      dvs.appendChild(dli);
-      dvs.appendChild(pl);
-      dvs.appendChild(pli);
-      dvs.appendChild(pd);
-      dvs.appendChild(minus);
-      dvs.appendChild(inc);
-      dvs.appendChild(plus);
+      btn = document.getElementById('nw');
       btn.addEventListener("click", function () {
         btn.style.display = 'none';
         dv.style.display = 'none';
