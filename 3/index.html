@@ -68,18 +68,18 @@
       pli.contentEditable = 'true';
       pli.class = 'ed';
       pli.innerHTML = '10';
+      document.body.appendChild(dvs);
+      dvs.appendChild(dl);
+      dvs.appendChild(dli);
+      dvs.appendChild(pl);
+      dvs.appendChild(pli);
+      dvs.appendChild(pd);
+      dvs.appendChild(minus);
+      dvs.appendChild(inc);
+      dvs.appendChild(plus);
       btn.addEventListener("click", function () {
         btn.style.display = 'none';
         dv.style.display = 'none';
-        document.body.appendChild(dvs);
-        dvs.appendChild(dl);
-        dvs.appendChild(dli);
-        dvs.appendChild(pl);
-        dvs.appendChild(pli);
-        dvs.appendChild(pd);
-        dvs.appendChild(minus);
-        dvs.appendChild(inc);
-        dvs.appendChild(plus);
       });
       function random(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
