@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1, height = device-height" />
   </head>
   <body>
-    <div class="c">
+    <div id="dv" class="c">
       <button id="nw">Joc Nou</button>
       <p><br></p>
     </div>
@@ -43,10 +43,13 @@
       }
     </style>
     <script>
-      btn = document.getElementById('nw');
+      var btn = document.getElementById('nw');
+      var dv = document.getElementById('dv');
+      var nl = document.getElementById('inc');
       btn.addEventListener("click", function () {
-        btn.style.display = 'none';
-        dv.style.display = 'none';
+        //btn.style.display = 'none';
+        //dv.style.display = 'none';
+        alert(nl.innerHTML);
       });
       function random(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
