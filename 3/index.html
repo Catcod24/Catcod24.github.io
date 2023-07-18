@@ -49,21 +49,28 @@
       var dli = document.getElementById('dli');
       var pli = document.getElementById('pli');
       btn.addEventListener("click", function () {
-        let s = nl.innerHTML;
-        s = s.replace('.', '');
-        s = s.replace('-', '');
-        s = s.replace(' ', '');
-        nl.innerHTML = s;
-        s = dli.innerHTML;
-        s = s.replace('.', '');
-        s = s.replace('-', '');
-        s = s.replace(' ', '');
-        dli.innerHTML = s;
-        s = pli.innerHTML;
-        s = s.replace('.', '');
-        s = s.replace('-', '');
-        s = s.replace(' ', '');
-        pli.innerHTML = s;
+        let tt = nl.innerHTML.lenght + dli.innerHTML.lenght + pli.innerHTML.lenght;
+        let i = 0;
+        while(i < tt || i == tt){
+          let s = nl.innerHTML;
+          s = s.replace('.', '');
+          s = s.replace('-', '');
+          s = s.replace(' ', '');
+          s = s.replace('<br>, '');
+          nl.innerHTML = s;
+          s = dli.innerHTML;
+          s = s.replace('.', '');
+          s = s.replace('-', '');
+          s = s.replace(' ', '');
+          s = s.replace('<br>, '');
+          dli.innerHTML = s;
+          s = pli.innerHTML;
+          s = s.replace('.', '');
+          s = s.replace('-', '');
+          s = s.replace(' ', '');
+          s = s.replace('<br>, '');
+          pli.innerHTML = s;
+        }
       });
       function random(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
