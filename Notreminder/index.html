@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale = 1, height = device-height" />
   </head>
   <body>
-    <button id = "btnn" onclick="sw" style="position: relative; top: 1px; left: 1px; font-size: 15px; background: red;">Notification: off</button>
+    <button id = "btnn" onclick="notp('a')" style="position: relative; top: 1px; left: 1px; font-size: 15px; background: red;">Notification: off</button>
     <script>
       var ofn;
       function notp(w){
@@ -13,18 +13,18 @@
           if (w == 'b'){
             return result;
           }
-          if (result == 'granted' && fst == 0){
+          if (result == 'granted'){
             let el = document.getElementById('btnn');
             el.innerHTML = 'Notification: on';
             el.style.background = 'chartreuse';
             ofn = 1;
-          } else if(fst == 0) {
+          } else {
             let el = document.getElementById('btnn');
             el.innerHTML = 'Notification: off';
             el.style.background = 'red';
             ofn = 0;
           }
-          if (fst == 1){
+          /*if (fst == 1){
             if (onf == 1){
               onf = 0;
               let el = document.getElementById('btnn');
@@ -36,7 +36,7 @@
               el.style.background = 'chartreuse';
               ofn = 1;
             }
-          }
+          }*/
         });
       }
       function sw(){
