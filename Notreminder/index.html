@@ -10,7 +10,6 @@
       var ofn;
       var fst = 0;
       function notp(w){
-        fst = 1;
         Notification.requestPermission().then((result) => {
           if (w == 'b'){
             return result;
@@ -26,7 +25,21 @@
             el.style.background = 'red';
             ofn = 0;
           }
+          if (fst == 1){
+            if (onf == 1){
+              onf = 0;
+              let el = document.getElementById('btnn');
+              el.innerHTML = 'Notification: off';
+              el.style.background = 'red';
+            } else {
+              let el = document.getElementById('btnn');
+              el.innerHTML = 'Notification: on';
+              el.style.background = 'chartreuse';
+              ofn = 1;
+            }
+          }
         });
+        fst = 1;
       }
     </script>
   </body>
