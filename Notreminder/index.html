@@ -9,14 +9,26 @@
     <p style="position: relative; font-size: 20px;">Add Reminder</p>
     <p style="position: absolute;">Date: <span><input type="date" id ="dd"></span>  Hour: <span><input type="time" id="tt"></span>  <span><button onclick="addr()" style="background: chartreuse; font-size: 15px;">Add Reminder</button></span></p>
     <p style="position: absolute; bottom: 15%; font-size: 20px;">Remove Reminder</p>
-    <p style="position: absolute; bottom: 6%;">Number of reminder: <span><input type="text" id="tex"></span> <span><button onclick="deleter()" style="background: chartreuse; font-size: 15px;">Delete Reminder</button></span></p>
+    <p style="position: absolute; bottom: 6%;">Number of reminder: <span><input type="number" id="num"></span> <span><button onclick="deleter()" style="background: chartreuse; font-size: 15px;">Delete Reminder</button></span></p>
     <script>
       var ofn;
+      var data = [];
+      var ore = [];
       function addr(){
-        alert('x');
+        data.push(document.getElementById("dd").value);
+        ore.push(document.getElementById('tt').value);
+        document.getElementById('tt').value = '';
+        document.getElementById('dd').value = '';
       }
       function deleter(){
-        alert('b');
+        let in = document.getElementById('num').value;
+        try {
+          data.splice(in, 1);
+          ore.splice(in, 1);
+        } catch(err) {
+          let a = 1;
+        }
+        document.getElementById('num').value = '';
       }
       function notp(w){
         Notification.requestPermission().then((result) => {
