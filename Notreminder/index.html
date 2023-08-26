@@ -6,10 +6,13 @@
   </head>
   <body>
     <button id = "btnn" onclick="notp('a')" style="position: relative; top: 1px; left: 1px; font-size: 15px; background: red;">Notification: off</button>
-    <p onclick="alert(document.getElementById('dd').value)" style="left: 40%; top: 100px; font-size: 20px;">Add Reminder</p>
-    <p><span><input type="date" id ="dd"></span></p>
+    <p onclick="alert(document.getElementById('tt').value)" style="left: 40%; top: 100px; font-size: 20px;">Add Reminder</p>
+    <p>Date: <span><input type="date" id ="dd"></span>  Hour: <span><input type="time" id="tt"></span>  <span><button onclick="addr" style="background: chartreuse; font-size: 15px;">Add Reminder</button></span></p>
     <script>
       var ofn;
+      function addr(){
+        alert('x');
+      }
       function notp(w){
         Notification.requestPermission().then((result) => {
           if (w == 'b'){
