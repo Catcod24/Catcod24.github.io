@@ -14,7 +14,10 @@
       var ofn;
       var data = [];
       var ore = [];
+      var con = [];
       function addr(){
+        let in = document.getElementById('tt').value;
+        alert(in);
         data.push(document.getElementById("dd").value);
         ore.push(document.getElementById('tt').value);
         document.getElementById('tt').value = '';
@@ -30,6 +33,12 @@
         }
         document.getElementById('num').value = '';
       }
+      var i = setInterval(700, function () {
+        let d = new Date();
+        datee = d.getFullYear().toString() + '-' + d.getMonth().toString() + '-' + d.getDay().toString()
+        oree = d.getHours().toString();
+        min = d.getMinutes().toString();
+      })
       function notp(w){
         Notification.requestPermission().then((result) => {
           if (w == 'b'){
