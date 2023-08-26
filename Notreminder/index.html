@@ -22,11 +22,11 @@
       }
       var inter = setInterval(function () {
         let d = new Date();
-        let year = d.getFullYear().toString();
-        let m = d.getMonth().toString();
-        let zi = d.getDay().toString();
-        let h = d.getHours().toString();
-        let m = d.getMinutes().toString();
+        let year = d.getFullYear();
+        let m = d.getMonth();
+        let zi = d.getDay();
+        let h = d.getHours();
+        let m = d.getMinutes();
         alert(m)
       }, 1000);
       function notp(w){
