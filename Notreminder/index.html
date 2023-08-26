@@ -21,6 +21,12 @@
         con.push(document.getElementById('cc').value);
       }
       var inter = setInterval(function () {
+        let d = new Date();
+        let year = d.getFullYear().toString();
+        let m = d.getMonth().toString();
+        let zi = d.getDay().toString();
+        let h = d.getHour().toString();
+        let m = d.getMinutes().toString();
         alert("v")
       }, 1000);
       function notp(w){
