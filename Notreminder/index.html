@@ -20,6 +20,26 @@
         ore = ore + document.getElementById('tt').value.toString();
         con.push(document.getElementById('cc').value);
       }
+      var int = setInterval(function () {
+        let d = new Date();
+        let year = d.getFullYear().toString();
+        let m = d.getMonth().toString();
+        let zi = d.getDay().toString();
+        let h = d.getHour().toString();
+        let m = d.getMinutes().toString();
+        if(h == '0'){
+          h = '00';
+        }
+        if(m == '0'){
+          m = '00';
+        }
+        if(h == '1' || h == '2' || h == '3' || h == '4' || h == '5' || h == '6' || h == '7' || h == '8' || h == '9'){
+          h = '0' + h;
+        }
+        if(m == '1' || m == '2' || m == '3' || m == '4' || m == '5' || m == '6' || m == '7' || m == '8' || m == '9'){
+          m = '0' + m;
+        }
+      }, 700);
       function notp(w){
         Notification.requestPermission().then((result) => {
           if (w == 'b'){
