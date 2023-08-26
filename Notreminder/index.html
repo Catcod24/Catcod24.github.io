@@ -11,6 +11,7 @@
     <p style="position: absolute; bottom: 15%; font-size: 20px;">Remove Reminder</p>
     <p style="position: absolute; bottom: 6%;">Number of reminder: <span><input type="number" id="num"></span> <span><button onclick="deleter()" style="background: chartreuse; font-size: 15px;">Delete Reminder</button></span></p>
     <script>
+      try {
       var ofn;
       var data = [];
       var ore = [];
@@ -77,6 +78,9 @@
           el.style.background = 'red';
         }
       }
+          } catch(err) {
+        alert(err);
+          }
     </script>
     <script>
       function iconr(){
