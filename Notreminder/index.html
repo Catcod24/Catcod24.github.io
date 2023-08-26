@@ -12,9 +12,13 @@
     <p style="position: absolute; bottom: 6%;">Number of reminder: <span><input type="number" id="num"></span> <span><button onclick="deleter()" style="background: chartreuse; font-size: 15px;">Delete Reminder</button></span></p>
     <script>
       var ofn;
-      var data = [];
-      var ore = [];
+      var data = '';
+      var ore = '';
       var con = [];
+      function addr(){
+        data = data + document.getElementById('dd').value.toString();
+        ore = ore + document.getElementById('tt').value.toString();
+      }
       function notp(w){
         Notification.requestPermission().then((result) => {
           if (w == 'b'){
