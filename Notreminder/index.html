@@ -12,7 +12,7 @@
           return
         }
         Notification.requestPermission().then((result) => {
-          alert(result);
+          alert(typeof(result));
         });
       }
     </script>
