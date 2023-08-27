@@ -16,10 +16,9 @@
       var ore = [];
       var con = [];
       function addr(){
-        alert(document.getElementById('dd').value)
-        alert(document.getElementById('tt').value)/*
-        data.push(document.getElementById('dd').value.toString());
-        ore.push(document.getElementById('tt').value.toString());
+        alert(typeof(document.getElementById('cc').value))/*
+        data.push(document.getElementById('dd').value);
+        ore.push(document.getElementById('tt').value);
         con.push(document.getElementById('cc').value);*/
       }
       var inter = setInterval(function () {
@@ -46,9 +45,15 @@
         if(m == '1' || m == '2' || m == '3' || m == '4' || m == '5' || m == '6' || m == '7' || m == '8' || m == '9'){
           m = '0' + m;
         }
+        if(zi == '1' || zi == '2' || zi == '3' || zi == '4' || zi == '5' || zi == '6' || zi == '7' || zi == '8' || zi == '9'){
+          zi = '0' + zi;
+        }
+        if(mo == '1' || mo == '2' || mo == '3' || mo == '4' || mo == '5' || mo == '6' || mo == '7' || mo == '8' || mo == '9'){
+          mo = '0' + mo;
+        }
         orac = h + ':' + m;
         datac = year + '-' + mo + '-' + zi;
-      }, 1000);
+      }, 700);
       function notp(w){
         Notification.requestPermission().then((result) => {
           if (w == 'b'){
