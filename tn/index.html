@@ -14,10 +14,16 @@
       function t(w){
         alert(w)
         Notification.requestPermission().then(function (result) {
-          let title = "Test";
-          let icon = iconr();
-          let body = 'gu';
-          var notification = new Notification(title, { body, icon });
+          let x = 1;
+          while (x == 1){
+            if(document.visiblityState != visible){
+              let title = "Test";
+              let icon = iconr();
+              let body = 'gu';
+              var notification = new Notification(title, { body, icon });
+              x = 0;
+            }
+          }
         });
       }
     </script>
