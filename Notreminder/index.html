@@ -8,6 +8,10 @@
     <button id = "btnn" onclick="notp('a')" style="position: relative; top: 1px; left: 1px; font-size: 15px; background: red;">Notification: off</button>
     <p style="position: relative; font-size: 20px;">Add Reminder</p>
     <p style="position: absolute;">Date: <span><input type="date" id ="dd"></span>  Hour: <span><input type="time" id="tt"></span>  Content: <span><input type="text" id="cc"></span>  <span><button onclick="addr()" style="background: chartreuse; font-size: 15px;">Add Reminder</button></span></p>
+    <div style="position: absolute; with: 70%; height: 30%; overflow: scroll;">
+      <p style="font-size: 20px;">Reminders</p>
+      <p id="rre" style="font-size: 15px;"></p>
+    </div>
     <p style="position: absolute; top: 300px; font-size: 20px;">Remove Reminder</p>
     <p style="position: absolute; top: 370px;">Number of reminder: <span><input type="number" id="num"></span> <span><button onclick="deleter()" style="background: chartreuse; font-size: 15px;">Delete Reminder</button></span></p>
     <script>
@@ -21,6 +25,9 @@
         con.push(document.getElementById('cc').value);
       }
       var inter = setInterval(function () {
+        if(ore == []){
+          return;
+        }
         let d = new Date();
         let year = d.getFullYear();
         let mo = d.getMonth();
@@ -55,8 +62,10 @@
         let i = 0;
         let tdel = [];
         while (i < ore.length){
-          if(ore[i] == orac && data[i] == datac){
-            //notification
+          if(ore[i] == orac && data[i] == datac && ofn == 1){    
+            let img = iconr();
+            let contentt = con[i];
+            let n = new Notification("Reminder", {body: contentt, icon: img});
             tdel.push(i);
           }
           i = i + 1;
