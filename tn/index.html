@@ -12,20 +12,13 @@
         return a;
       }
       function t(w){
-        alert(w)
-        Notification.requestPermission().then(function (result) {
-          let x = 1;
-          while (x == 1){
-            if(document.visiblityState != visible){
-              let title = "Test";
-              let icon = 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png';
-              let body = 'gu';
-              var notification = new Notification(title, { body, icon });
-              x = 0;
-            }
-          }
-        });
-        alert("g")
+        let title = "Test";
+        let icon = 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png';
+        let body = 'gu';
+        var n = new Notification(title, { body, icon });
+        n.addEventListener("error", function () {
+          alert("err");
+        })
       }
     </script>
   </body>
