@@ -12,13 +12,15 @@
     <p style="position: absolute; top: 370px;">Number of reminder: <span><input type="number" id="num"></span> <span><button onclick="deleter()" style="background: chartreuse; font-size: 15px;">Delete Reminder</button></span></p>
     <script>
       var ofn;
-      var data = '';
-      var ore = '';
+      var data = [];
+      var ore = [];
       var con = [];
       function addr(){
-        data = data + document.getElementById('dd').value.toString();
-        ore = ore + document.getElementById('tt').value.toString();
-        con.push(document.getElementById('cc').value);
+        alert(typeof(document.getElementById('dd').value))
+        alert(typeof(document.getElementById('tt').value))/*
+        data.push(document.getElementById('dd').value.toString());
+        ore.push(document.getElementById('tt').value.toString());
+        con.push(document.getElementById('cc').value);*/
       }
       var inter = setInterval(function () {
         let d = new Date();
@@ -27,7 +29,25 @@
         let zi = d.getDay();
         let h = d.getHours();
         let m = d.getMinutes();
-        alert(m)
+        year = year.toString();
+        mo = mo.toString();
+        zi = zi.toString();
+        h = h.toString();
+        m = m.toString();
+        if(h == '0'){
+          h = '00';
+        }
+        if(m == '0'){
+          m = '00';
+        }
+        if(h == '1' || h == '2' || h == '3' || h == '4' || h == '5' || h == '6' || h == '7' || h == '8' || h == '9'){
+          h = '0' + h;
+        }
+        if(m == '1' || m == '2' || m == '3' || m == '4' || m == '5' || m == '6' || m == '7' || m == '8' || m == '9'){
+          m = '0' + m;
+        }
+        orac = h + ':' + m;
+        datac = year + '-' + mo + '-' + zi;
       }, 1000);
       function notp(w){
         Notification.requestPermission().then((result) => {
