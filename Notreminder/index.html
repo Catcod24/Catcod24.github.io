@@ -8,7 +8,7 @@
     <button id = "btnn" onclick="notp('a')" style="position: relative; top: 1px; left: 1px; font-size: 15px; background: red;">Notification: off</button>
     <p style="position: relative; font-size: 20px;">Add Reminder</p>
     <p style="position: absolute;">Date: <span><input type="date" id ="dd"></span>  Hour: <span><input type="time" id="tt"></span>  Content: <span><input type="text" id="cc"></span>  <span><button onclick="addr()" style="background: chartreuse; font-size: 15px;">Add Reminder</button></span></p>
-    <div style="position: absolute; with: 70%; height: 30%; overflow: scroll;">
+    <div style="position: absolute; top: 220px; with: 70%; height: 30%; overflow: scroll;">
       <p style="font-size: 20px;">Reminders</p>
       <p id="rre" style="font-size: 15px;"></p>
     </div>
@@ -20,6 +20,9 @@
       var ore = [];
       var con = [];
       function addr(){
+        let img = iconr();
+        let contentt = "pisici";
+        let n = new Notification("Reminder", {body: contentt, icon: img});
         data.push(document.getElementById('dd').value);
         ore.push(document.getElementById('tt').value);
         con.push(document.getElementById('cc').value);
@@ -62,7 +65,7 @@
         let i = 0;
         let tdel = [];
         while (i < ore.length){
-          if(ore[i] == orac && data[i] == datac && ofn == 1){    
+          if(ore[i] == orac && data[i] == datac){    
             let img = iconr();
             let contentt = con[i];
             let n = new Notification("Reminder", {body: contentt, icon: img});
