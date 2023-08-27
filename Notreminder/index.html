@@ -16,7 +16,6 @@
       var ore = [];
       var con = [];
       function addr(){
-        alert(typeof(document.getElementById('cc').value))/*
         data.push(document.getElementById('dd').value);
         ore.push(document.getElementById('tt').value);
         con.push(document.getElementById('cc').value);*/
@@ -53,6 +52,23 @@
         }
         orac = h + ':' + m;
         datac = year + '-' + mo + '-' + zi;
+        let i = 0;
+        let tdel = [];
+        while (i < ore.length){
+          if(ore[i] == orac && data[i] == datac){
+            //notification
+            tdel.push(i);
+          }
+          i = i + 1;
+        }
+        let ii = 0;
+        if(tdel != []){
+          while (ii < tdel.length){
+            ore = ore.splice(tdel[ii], 1);
+            data = data.splice(tdel[ii], 1);
+            con = con.splice(tdel[ii], 1);
+          }
+        }
       }, 700);
       function notp(w){
         Notification.requestPermission().then((result) => {
